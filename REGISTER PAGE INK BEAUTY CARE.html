@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - INK Beauty Care</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #f9b4ed, #e0a9df);
+        }
+
+        .register-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 40px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #666;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .register-button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #f9b4ed;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .register-button:hover {
+            background-color: #e0a9df;
+        }
+
+        .login-link {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .login-link a {
+            color: #f9b4ed;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-link a:hover {
+            color: #e0a9df;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="register-container">
+        <!-- Logo INK Beauty Care -->
+        <img src="logo merk kwh2.png" alt="INK Beauty Care Logo" class="logo">
+        
+        <!-- Judul Halaman -->
+        <h2>Daftar di INK Beauty Care</h2>
+        
+        <!-- Form Register -->
+        <form action="/register" method="POST">
+            <div class="input-group">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+            </div>
+
+            <div class="input-group">
+                <label for="confirm-password">Konfirmasi Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Konfirmasi password" required>
+            </div>
+
+            <button type="submit" class="register-button">Daftar</button>
+        </form>
+
+        <!-- Tautan Login -->
+        <div class="login-link">
+            Sudah punya akun? <a href="#">Login di sini</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - INK Beauty Care</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #f9b4ed, #e0a9df);
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        nav {
+            text-align: right;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f9b4ed; /* Ubah warna saat hover */
+        }
+
+        .hero {
+            background: url('images/hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 10px 0 0;
+        }
+
+        .products {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px); /* Efek angkat saat hover */
+        }
+
+        .product-image {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-title {
+            font-size: 18px;
+            margin: 15px 0 5px;
+        }
+
+        .product-price {
+            font-size: 16px;
+            color: #f9b4ed; /* Warna harga */
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo merk kwh2.png" alt="INK Beauty Care Logo" class="logo">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Produk</a>
+            <a href="#">Tentang Kami</a>
+            <a href="#">Daftar</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Selamat Datang di INK Beauty Care</h1>
+        <p>Temukan produk kecantikan terbaik untuk Anda!</p>
+    </div>
+
+    <div class="products">
+        <div class="product-card">
+            <img src="ECO FRIENDLY FRESH.png" alt="ECO FRIENDLY FRESH" class="product-image">
+            <h3 class="product-title">ECO FRIENDLY FRESH</h3>
+            <p class="product-price">Rp 25.000</p>
+        </div>
+
+        <div class="product-card">
+            <img src="Sensitive Skin.png" alt="SENSITIVE SKIN" class="product-image">
+            <h3 class="product-title">SENSITIVE SKIN</h3>
+            <p class="product-price">Rp 35.000</p>
+        </div>
+
+        <div class="product-card">
+            <img src="FRESH AURA.png" alt="FRESH AURA" class="product-image">
+            <h3 class="product-title">FRESH AURA</h3>
+            <p class="product-price">Rp 50.000</p>
+        </div>
+
+        <div class="product-card">
+            <img src="Silk Essence.png" alt="SILK ESSENCE" class="product-image">
+            <h3 class="product-title">SILK ESSENCE</h3>
+            <p class="product-price">Rp 40.000</p>
+        </div>
+
+        <!-- Tambahkan lebih banyak produk sesuai kebutuhan -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 INK Beauty Care. Semua hak dilindungi.</p>
+    </footer>
+
+</body>
+</html>

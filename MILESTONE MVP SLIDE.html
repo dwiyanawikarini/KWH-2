@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INK Beauty Care</title>
+    <style>
+        /* Gaya umum */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff99cc, #66ccff);
+            color: #333;
+            overflow: hidden;
+        }
+        
+        /* Kotak kontainer utama */
+        .container {
+            text-align: center;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+        }
+        
+        /* Gambar logo */
+        .logo {
+            width: 120px; /* Sesuaikan ukuran logo */
+            height: auto;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-out;
+        }
+        
+        /* Judul */
+        h1 {
+            font-size: 2.5em;
+            color: #e91e63;
+            margin: 10px 0;
+            animation: slideDown 1.5s ease-out;
+        }
+        
+        /* Deskripsi */
+        p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 30px;
+            animation: fadeIn 2.5s ease-out;
+        }
+        
+        /* Tombol */
+        .btn {
+            background-color: #e91e63;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1em;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.2s;
+            animation: bounceIn 3s ease-out;
+        }
+        
+        .btn:hover {
+            background-color: #d81b60;
+            transform: scale(1.05);
+        }
+
+        /* Animasi untuk elemen-elemen */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideDown {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes bounceIn {
+            from { transform: scale(0.9); }
+            to { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Logo INK Beauty Care -->
+    <img src="logo merk kwh2.png" alt="INK Beauty Care Logo" class="logo">
+    
+    <!-- Judul dan Deskripsi -->
+    <h1>INK Beauty Care</h1>
+    <p>Perawatan Kecantikan Alami untuk Kehidupan yang Segar dan Percaya Diri</p>
+    
+    <!-- Tombol untuk melanjutkan ke situs utama -->
+    <a href="#main-content" class="btn">Jelajahi Produk Kami</a>
+</div>
+
+</body>
+</html>
